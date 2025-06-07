@@ -1,0 +1,119 @@
+.resume-container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transition: background 0.5s ease;
+}
+
+.resume-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--accent-color);
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.resume-title::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 4px;
+  background: var(--accent-color);
+  margin: 10px auto 0;
+  border-radius: 3px;
+  animation: scaleIn 0.8s ease forwards;
+  transform-origin: left;
+}
+
+.resume-section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.resume-section:last-child {
+  border-bottom: none;
+}
+
+.resume-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+  letter-spacing: 1.5px;
+  transition: color 0.3s ease;
+}
+
+.resume-item {
+  margin-bottom: 1rem;
+}
+
+.resume-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+  color: #e0d7f5;
+}
+
+.resume-item p {
+  font-size: 1.1rem;
+  margin: 0.2rem 0;
+  color: #d1c9f2;
+}
+
+.resume-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #c5bcf7;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  background-color: var(--accent-color);
+  color: #1a1a2e;
+  padding: 8px 14px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.skill:hover {
+  background-color: #9b6fc9;
+  color: white;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 30px;
+  background-color: var(--accent-color);
+  color: #1a1a2e;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: #5a4a93;
+  color: white;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}

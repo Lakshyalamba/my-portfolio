@@ -1,0 +1,120 @@
+/* Home.css */
+
+.home-container {
+  min-height: 80vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s ease;
+}
+
+/* Footer styling reused on About page */
+
+.footer {
+  background-color: #1a1a2e;
+  color: #ccc;
+  padding: 1rem 0;
+  text-align: center;
+  position: relative; /* or fixed/sticky if you want */
+  width: 100%;
+}
+
+  
+  /* Content styling */
+  .home-content {
+    max-width: 600px;
+    font-size: 1.2rem;
+    animation: slideInLeft 1s ease forwards;
+  }
+  
+  .home-photo img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover zoom effect on photo */
+  .home-photo img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Button styling */
+  .btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #ff3b2e;
+    transform: scale(1.05);
+  }
+  
+  /* Fade-in animation */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  /* Delay helpers */
+  .delay-1 {
+    animation-delay: 0.5s;
+  }
+  .delay-2 {
+    animation-delay: 1s;
+  }
+  .delay-3 {
+    animation-delay: 1.5s;
+  }
+  
+  /* Keyframes */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .home-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .home-content {
+      animation: none;
+    }
+  
+    .home-photo img {
+      width: 200px;
+      height: 200px;
+      margin-top: 20px;
+    }
+  }
+  

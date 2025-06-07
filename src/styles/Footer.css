@@ -1,0 +1,8 @@
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    /* Make footer sticky to bottom by itself only if parent allows */
+  }
+  

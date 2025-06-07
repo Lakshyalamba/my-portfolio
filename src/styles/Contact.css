@@ -1,0 +1,113 @@
+:root {
+  --accent-color: #ffd369;
+  --accent-color-dark: #e6b93a;
+  --accent-color-light-bg: rgba(255, 211, 105, 0.1);
+  --accent-text-color: #4b3a00;
+}
+
+.contact-page {
+  max-width: 650px;
+  margin: 3rem auto 5rem;
+  padding: 2rem 2.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeInPage 1s ease forwards;
+  flex-grow: 1;
+}
+
+.contact-page h1 {
+  font-size: 3rem;
+  margin-bottom: 0.2rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: var(--accent-color);
+}
+
+.contact-page .intro {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.thank-you-msg {
+  background-color: #34d399; /* light green */
+  color: #064e3b; /* dark green */
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 600;
+  animation: fadeInPage 0.8s ease forwards;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.8rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px var(--accent-color);
+  background-color: var(--accent-color-light-bg);
+}
+
+.submit-btn {
+  background: var(--accent-color);
+  border: none;
+  padding: 1rem 2.5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  color: var(--accent-text-color);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 6px 15px rgba(255, 211, 105, 0.7);
+}
+
+.submit-btn:hover {
+  background-color: var(--accent-color-dark);
+  transform: scale(1.07);
+}
+
+@keyframes fadeInPage {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Main content wrapper styling for flex grow to push footer down */
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}

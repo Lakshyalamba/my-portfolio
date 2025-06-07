@@ -1,0 +1,17 @@
+/* Ensure html, body and root div take full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Your app container uses flexbox column */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* full viewport height */
+}
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
