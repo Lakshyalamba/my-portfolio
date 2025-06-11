@@ -1,19 +1,28 @@
-import React from 'react';
-import '../styles/Home.css';  // Use Home.css for background and footer styles
+import React from "react";
+import "../styles/About.css";
+import profilePic from "../assets/images/profile.jpg"; // Make sure this image exists
 
 function About() {
   return (
-    <div className="home-container about-container">
-      <h1 className="about-title">About Me</h1>
+    <div className="about-container">
+      <div className="about-photo">
+        <img src={profilePic} alt="Lakshya" />
+      </div>
       <div className="about-content">
+        <h1>Hi, I’m Lakshya. Nice to meet you!</h1>
         <p>
-          Hello! I'm Lakshya, a passionate web developer who loves creating beautiful and functional websites. With a keen eye for design and a dedication to clean code, I strive to build seamless user experiences.
+          I am a passionate developer from India who loves building web apps that are
+          both beautiful and functional. My goal is to deliver impactful user experiences through
+          clean code and intuitive design.
         </p>
         <p>
-          I specialize in React, JavaScript, and CSS, and I'm always eager to learn new technologies and improve my skills.
+          With a background in Computer Science and deep interest in frontend and backend development,
+          I specialize in React, JavaScript, HTML, and CSS. I enjoy solving problems, collaborating with
+          teams, and constantly learning new technologies to improve my skills.
         </p>
         <p>
-          When I'm not coding, I enjoy playing volleyball, going to the gym, and exploring creative video editing.
+          Whether it’s creating a responsive portfolio, a full-stack project, or exploring new libraries,
+          I always aim to craft something meaningful. Let’s build something great together!
         </p>
       </div>
     </div>

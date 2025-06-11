@@ -4,14 +4,14 @@ import "../styles/Resume.css";
 function Resume() {
   return (
     <div className="resume-container">
-      <h1 className="resume-title">My Resume</h1>
+      <h1 className="resume-title">MY RESUME</h1>
 
       <section className="resume-section">
         <h2>Education</h2>
         <div className="resume-item">
           <h3>Bachelor of Technology in Computer Science</h3>
-          <p>XYZ University, 2021 - Present</p>
-          <p>CGPA: 8.5/10</p>
+          <p>Newton School of Technology, Rishihood University, 2025 - Present</p>
+          <p>CGPA: 7.87/10</p>
         </div>
       </section>
 
@@ -19,7 +19,7 @@ function Resume() {
         <h2>Experience</h2>
         <div className="resume-item">
           <h3>Frontend Developer Intern</h3>
-          <p>ABC Tech, June 2024 - August 2024</p>
+          <p>Infosys Tech, June 2025 - August 2025</p>
           <ul>
             <li>Developed responsive UI components using React.js.</li>
             <li>Improved website performance and user experience.</li>
@@ -39,16 +39,17 @@ function Resume() {
         </div>
       </section>
 
-      <section className="resume-section">
-        <h2>Download Resume</h2>
+      <section className="resume-section download-section">
+        <h2>Want a copy of my Resume?</h2>
+        <p>Click below to download a professionally formatted PDF version.</p>
         <a
           href="/assets/resume.pdf"
           download
-          className="btn btn-primary"
+          className="btn btn-glow"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Download PDF
+          📄 Download PDF
         </a>
       </section>
     </div>
