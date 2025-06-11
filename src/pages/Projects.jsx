@@ -7,8 +7,8 @@ function Projects() {
       id: 1,
       title: "Portfolio Website",
       description: "A personal portfolio built with React and Vite.",
-      github: "https://github.com/yourusername/portfolio-website",
-      demo: "https://yourportfolio.com",
+      github: "https://github.com/Lakshyalamba/my-portfolio",
+      demo: "my-personal-portfol.netlify.app",
     },
     {
       id: 2,
