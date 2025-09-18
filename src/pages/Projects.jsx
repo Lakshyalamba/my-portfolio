@@ -5,22 +5,34 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Portfolio Website",
-      description: "A personal portfolio built with React and Vite.",
-      github: "https://github.com/Lakshyalamba/my-portfolio",
-      demo: "my-personal-portfol.netlify.app",
+      title: "Bingequiz",
+      description:
+        "A dynamic movie quiz app where users can test their knowledge with interactive questions based on popular films.",
+      techStack: "HTML, CSS, JavaScript, React",
+      features:
+        "Integrated difficulty levels, responsive design, and GitHub version control to ensure scalability, maintainability, and seamless navigation.",
+      github: "https://github.com/Lakshyalamba/bingequiznextjs",
+      demo: "https://bingequiz.netlify.app/",
     },
     {
       id: 2,
-      title: "Mini Calender",
-      description: "It displays the current month with days arranged in a grid format, highlighting the current date.",
+      title: "Mini Calendar",
+      description:
+        "A simple mini calendar app that displays the current month with days arranged in a grid format, highlighting today’s date.",
+      techStack: "HTML, CSS, JavaScript",
+      features:
+        "Lightweight UI, highlights the current date, and responsive layout for different screen sizes.",
       github: "https://github.com/Lakshyalamba/Mini-Calender",
       demo: "https://mini-calender-mu.vercel.app/",
     },
     {
       id: 3,
       title: "Feedback App",
-      description: "The Feedback System is a simple web application built using HTML, CSS, and JavaScript that allows users to submit feedback.",
+      description:
+        "A feedback system that allows users to submit their thoughts and suggestions through an easy-to-use interface.",
+      techStack: "HTML, CSS, JavaScript",
+      features:
+        "Real-time feedback collection, simple and clean interface, and fully responsive design for mobile and desktop.",
       github: "https://github.com/Lakshyalamba/Feedback",
       demo: "https://feedback-sable-seven.vercel.app/",
     },
@@ -30,18 +42,33 @@ function Projects() {
     <div className="projects-container">
       <h1 className="projects-title">PROJECTS</h1>
       <p className="projects-subtitle">Some of my recent works</p>
-      <div className="projects-grid">
+
+      <div className="projects-list">
         {projects.map((project) => (
-          <div key={project.id} className="project-card">
-            <div className="project-card-content">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-            </div>
+          <div key={project.id} className="project-row">
+            <span className="project-title">{project.title}</span>
+            <span className="project-description">{project.description}</span>
+            <span className="project-tech">
+              <strong>Tech Stack:</strong> {project.techStack}
+            </span>
+            <span className="project-features">
+              <strong>Features:</strong> {project.features}
+            </span>
             <div className="project-links">
-              <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn">
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn"
+              >
                 GitHub
               </a>
-              <a href={project.demo} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+              <a
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+              >
                 Live Demo
               </a>
             </div>
