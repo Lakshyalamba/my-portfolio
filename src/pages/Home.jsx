@@ -7,7 +7,7 @@ function Home() {
     <div className="home-container">
       <div className="home-content">
         <h1 className="fade-in">Hi, I'm Lakshya 👋</h1>
-        <h2 className="fade-in delay-1">Frontend Developer | Tech Enthusiast</h2>
+        <h2 className="fade-in delay-1">Full Stack Developer | Tech Enthusiast</h2>
         <p className="fade-in delay-2 quote">
           “Code is like humor. When you have to explain it, it’s bad.”
         </p>

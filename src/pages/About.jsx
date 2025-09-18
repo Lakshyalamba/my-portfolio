@@ -11,18 +11,13 @@ function About() {
       <div className="about-content">
         <h1>Hi, I’m Lakshya. Nice to meet you!</h1>
         <p>
-          I am a passionate developer from India who loves building web apps that are
-          both beautiful and functional. My goal is to deliver impactful user experiences through
-          clean code and intuitive design.
+          I am an aspiring developer from India with a strong passion for building web applications that are both functional and visually engaging. My goal is to create impactful digital experiences through clean code, intuitive design, and attention to detail.
         </p>
         <p>
-          With a background in Computer Science and deep interest in frontend and backend development,
-          I specialize in React, JavaScript, HTML, and CSS. I enjoy solving problems, collaborating with
-          teams, and constantly learning new technologies to improve my skills.
+          With a background in Computer Science and a growing interest in both frontend and backend development, I have built skills in React, JavaScript, HTML, and CSS. I enjoy solving problems, working in collaborative environments, and continuously learning new technologies to expand my capabilities.
         </p>
         <p>
-          Whether it’s creating a responsive portfolio, a full-stack project, or exploring new libraries,
-          I always aim to craft something meaningful. Let’s build something great together!
+          I am eager to apply my knowledge to real-world projects, whether it’s designing responsive interfaces, exploring full-stack development, or experimenting with new frameworks. Driven by curiosity and a commitment to growth, I aim to contribute meaningfully to teams and projects that value innovation and user experience.
         </p>
       </div>
     </div>
