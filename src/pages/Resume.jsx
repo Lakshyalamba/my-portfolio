@@ -105,7 +105,7 @@ function Resume() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          📄 Download PDF
+          Download PDF
         </a>
       </section>
     </div>

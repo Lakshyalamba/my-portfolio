@@ -5,6 +5,17 @@ function Projects() {
   const projects = [
     {
       id: 1,
+      title: "DailyDrive",
+      description:
+        "DailyDrive is a unified self-improvement platform that helps users build consistent habits across fitness, study, and wellness through integrated course enrollment, streak-based tracking, and community engagement. The platform combines personalized dashboards, goal management, and advanced analytics to transform daily activities into lasting positive habits.",
+      techStack: "React.js + Node.js/Express.js + MySQL + JWT Authentication",
+      features:
+        "JWT authentication, personalized dashboard with streak tracking, free course enrollment (fitness/study/wellness), daily activity logging, goal management, community posts, and analytics with PDF/CSV export.",
+      github: "https://github.com/Lakshyalamba/dailydrive",
+      demo: "https://dailydrive-anfy.vercel.app/",
+    },
+    {
+      id: 2,
       title: "Bingequiz",
       description:
         "A dynamic movie quiz app where users can test their knowledge with interactive questions based on popular films.",
@@ -15,7 +26,7 @@ function Projects() {
       demo: "https://bingequiz.netlify.app/",
     },
     {
-      id: 2,
+      id: 3,
       title: "Mini Calendar",
       description:
         "A simple mini calendar app that displays the current month with days arranged in a grid format, highlighting today’s date.",
@@ -26,7 +37,7 @@ function Projects() {
       demo: "https://mini-calender-mu.vercel.app/",
     },
     {
-      id: 3,
+      id: 4,
       title: "Feedback App",
       description:
         "A feedback system that allows users to submit their thoughts and suggestions through an easy-to-use interface.",
@@ -46,14 +57,14 @@ function Projects() {
       <div className="projects-list">
         {projects.map((project) => (
           <div key={project.id} className="project-row">
-            <span className="project-title">{project.title}</span>
-            <span className="project-description">{project.description}</span>
-            <span className="project-tech">
+            <div className="project-title">{project.title}</div>
+            <div className="project-description">{project.description}</div>
+            <div className="project-tech">
               <strong>Tech Stack:</strong> {project.techStack}
-            </span>
-            <span className="project-features">
+            </div>
+            <div className="project-features">
               <strong>Features:</strong> {project.features}
-            </span>
+            </div>
             <div className="project-links">
               <a
                 href={project.github}
