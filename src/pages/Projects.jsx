@@ -5,6 +5,17 @@ function Projects() {
   const projects = [
     {
       id: 1,
+      title: "MoneyMind",
+      description:
+        "Built a full-stack personal finance management platform using React.js, Node.js/Express.js, Prisma, and PostgreSQL with secure JWT authentication. Enabled users to track income, expenses, budgets, and financial goals through an interactive, data-driven dashboard with category-wise analytics.",
+      techStack: "React.js + Node.js/Express.js + Prisma + PostgreSQL + JWT Authentication",
+      features:
+        "Integrated advanced features such as search, filtering, sorting, pagination, editable transactions, and financial tools (SIP calculator, currency converter, basic calculator) within a fully responsive, scalable, and intuitive UI.",
+      github: "https://github.com/Lakshyalamba/moneymind",
+      demo: "https://moneymind-personalfinance.netlify.app/",
+    },
+    {
+      id: 2,
       title: "DailyDrive",
       description:
         "DailyDrive is a unified self-improvement platform that helps users build consistent habits across fitness, study, and wellness through integrated course enrollment, streak-based tracking, and community engagement. The platform combines personalized dashboards, goal management, and advanced analytics to transform daily activities into lasting positive habits.",
@@ -15,7 +26,7 @@ function Projects() {
       demo: "https://dailydrive-anfy.vercel.app/",
     },
     {
-      id: 2,
+      id: 3,
       title: "Bingequiz",
       description:
         "A dynamic movie quiz app where users can test their knowledge with interactive questions based on popular films.",
@@ -26,7 +37,7 @@ function Projects() {
       demo: "https://bingequiz.netlify.app/",
     },
     {
-      id: 3,
+      id: 4,
       title: "Mini Calendar",
       description:
         "A simple mini calendar app that displays the current month with days arranged in a grid format, highlighting today’s date.",
@@ -36,17 +47,7 @@ function Projects() {
       github: "https://github.com/Lakshyalamba/Mini-Calender",
       demo: "https://mini-calender-mu.vercel.app/",
     },
-    {
-      id: 4,
-      title: "Feedback App",
-      description:
-        "A feedback system that allows users to submit their thoughts and suggestions through an easy-to-use interface.",
-      techStack: "HTML, CSS, JavaScript",
-      features:
-        "Real-time feedback collection, simple and clean interface, and fully responsive design for mobile and desktop.",
-      github: "https://github.com/Lakshyalamba/Feedback",
-      demo: "https://feedback-sable-seven.vercel.app/",
-    },
+
   ];
 
   return (

@@ -10,9 +10,7 @@ function Resume() {
       <section className="resume-section">
         <h2>Professional Summary</h2>
         <p>
-          Aspiring Full Stack Developer with expertise in Node.js, React, JavaScript, 
-          and MongoDB. Strong in Python, Data Structures and Algorithms, and MySQL, 
-          with 200+ solved problems on LeetCode and a 1600+ contest rating.
+          Full Stack Developer with expertise in Node.js, React, JavaScript and MongoDB. Strong in Python, Data Structures and Algorithms, and MySQL, with 300+ solved problems on LeetCode and a 1600+ contest rating.
         </p>
       </section>
 
@@ -22,7 +20,7 @@ function Resume() {
         <div className="resume-item">
           <h3>Bachelor of Technology in Computer Science</h3>
           <p>Newton School of Technology, Rishihood University, 2024 - 2028</p>
-          <p>CGPA: 7.87/10</p>
+          <p>CGPA: 7.935/10</p>
         </div>
         <div className="resume-item">
           <h3>Intermediate (Class XII)</h3>
