@@ -27,7 +27,7 @@ function Contact() {
     <div className="main-content">
       <div className="contact-page">
         <h1>Contact Me</h1>
-        <p className="intro">Feel free to get in touch for any inquiries or collaborations.</p>
+        <p className="intro">Looking to collaborate on Agentic AI, full-stack, or ML projects? Let's connect and build something impactful together.</p>
 
         {submitted && (
           <div className="thank-you-msg">

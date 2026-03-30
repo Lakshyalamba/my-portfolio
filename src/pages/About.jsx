@@ -9,15 +9,15 @@ function About() {
         <img src={profilePic} alt="Lakshya" />
       </div>
       <div className="about-content">
-        <h1>Hi, I’m Lakshya. Nice to meet you!</h1>
+        <h1>Hi, I'm Lakshya. Nice to meet you!</h1>
         <p>
-          I am an aspiring developer from India with a strong passion for building web applications that are both functional and visually engaging. My goal is to create impactful digital experiences through clean code, intuitive design, and attention to detail.
+          Collaborative software engineering intern with a strong learning mindset, building systems in fast-paced team environments. Proficient in Python and JavaScript, I focus on delivering features end-to-end — from development through deployment.
         </p>
         <p>
-          With a background in Computer Science and a growing interest in both frontend and backend development, I have built skills in React, JavaScript, HTML, and CSS. I enjoy solving problems, working in collaborative environments, and continuously learning new technologies to expand my capabilities.
+          Experienced in Agentic AI development using LangChain and LangGraph, including tool-calling and orchestration. I bring solid foundations in machine learning and data structures & algorithms, demonstrated through 425+ LeetCode problems solved.
         </p>
         <p>
-          I am eager to apply my knowledge to real-world projects, whether it’s designing responsive interfaces, exploring full-stack development, or experimenting with new frameworks. Driven by curiosity and a commitment to growth, I aim to contribute meaningfully to teams and projects that value innovation and user experience.
+          I'm an engineer focused on writing debuggable, scalable code — driven by curiosity, continuous improvement, and a commitment to building software that works reliably at scale.
         </p>
       </div>
     </div>

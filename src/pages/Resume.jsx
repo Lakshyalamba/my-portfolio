@@ -10,7 +10,7 @@ function Resume() {
       <section className="resume-section">
         <h2>Professional Summary</h2>
         <p>
-          Full Stack Developer with expertise in Node.js, React, JavaScript and MongoDB. Strong in Python, Data Structures and Algorithms, and MySQL, with 300+ solved problems on LeetCode and a 1600+ contest rating.
+          Collaborative software engineering intern with a strong learning mindset, building systems in fast-paced team environments. Proficient in Python and JavaScript, delivering features through deployment. Experienced in Agentic AI development using LangChain and LangGraph, including tool-calling and orchestration. Solid foundations in machine learning and data structures & algorithms, demonstrated through 425+ LeetCode problems. Engineer focused on debugging and scalable code.
         </p>
       </section>
 
@@ -64,18 +64,20 @@ function Resume() {
         <div className="skills-list">
           <span className="skill">Python</span>
           <span className="skill">JavaScript</span>
-          <span className="skill">CSS</span>
-          <span className="skill">HTML</span>
+          <span className="skill">LangChain</span>
+          <span className="skill">LangGraph</span>
+          <span className="skill">React</span>
           <span className="skill">Node.js</span>
           <span className="skill">Express.js</span>
-          <span className="skill">React</span>
           <span className="skill">MongoDB</span>
           <span className="skill">MySQL</span>
+          <span className="skill">PostgreSQL</span>
           <span className="skill">NumPy</span>
           <span className="skill">Pandas</span>
-          <span className="skill">Matplotlib</span>
-          <span className="skill">Figma</span>
-          <span className="skill">Data Structures</span>
+          <span className="skill">Machine Learning</span>
+          <span className="skill">Data Structures & Algorithms</span>
+          <span className="skill">HTML</span>
+          <span className="skill">CSS</span>
         </div>
       </section>
 
