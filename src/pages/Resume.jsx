@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Resume.css";
+import resumePdf from "../assets/resume.pdf";
 
 function Resume() {
   return (
@@ -99,8 +100,8 @@ function Resume() {
         <h2>Want a copy of my Resume?</h2>
         <p>Click below to download a professionally formatted PDF version.</p>
         <a
-          href="/assets/resume.pdf"
-          download
+          href={resumePdf}
+          download="resume.pdf"
           className="btn btn-glow"
           target="_blank"
           rel="noopener noreferrer"
