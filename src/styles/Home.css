@@ -6,13 +6,16 @@
 }
 
 .home-container {
-  min-height: 100vh;
+  height: calc(100vh - 60px);
   background: linear-gradient(135deg, #000000, #1a1a2e);
   color: var(--text-color);
-  padding: 2rem;
+  padding: 2rem 3rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  overflow: hidden;
 }
 
 /* Hero Section */
@@ -20,8 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
-  min-height: 60vh;
+  gap: 3rem;
   flex-wrap: wrap;
 }
 
@@ -33,8 +35,8 @@
 }
 
 .home-photo img {
-  width: 280px;
-  height: 280px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid var(--accent-color);
@@ -46,8 +48,8 @@
 
 .photo-glow {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(33, 150, 243, 0.2) 0%, transparent 70%);
   animation: pulse 3s ease-in-out infinite;
@@ -59,9 +61,9 @@
 }
 
 .intro-text h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: white;
 }
 
@@ -71,7 +73,7 @@
 }
 
 .intro-text h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #ccc;
   font-weight: 400;
 }
@@ -81,15 +83,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  gap: 1.5rem;
+  max-width: 1100px;
+  width: 100%;
 }
 
 .quote-card {
   background: linear-gradient(135deg, #1a1a2e, #2a2a4e);
-  padding: 2rem;
-  border-radius: 20px;
+  padding: 1.2rem 2rem;
+  border-radius: 15px;
   border-left: 5px solid var(--accent-color);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   max-width: 600px;
@@ -97,7 +99,7 @@
 }
 
 .quote {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-style: italic;
   color: #e0e0e0;
   margin: 0;
@@ -105,14 +107,14 @@
 
 .description-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
   width: 100%;
 }
 
 .card {
   background: linear-gradient(135deg, #0a0a0a, #1a1a2e);
-  padding: 2.5rem;
+  padding: 1.5rem 2rem;
   border-radius: 15px;
   border: 1px solid rgba(33, 150, 243, 0.2);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
@@ -126,27 +128,27 @@
 
 .card h3 {
   color: var(--accent-color);
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
   font-weight: 600;
 }
 
 .card p {
   color: #ddd;
-  line-height: 1.7;
-  font-size: 1.1rem;
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
 .cta-section {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 
 .btn-glow {
-  padding: 1rem 3rem;
+  padding: 0.8rem 2.5rem;
   background: linear-gradient(135deg, #2196f3, #1976d2);
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   border: 2px solid transparent;
   border-radius: 50px;
