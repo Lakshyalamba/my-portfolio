@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 
@@ -10,14 +10,10 @@ import Contact from "./pages/Contact";
 import "./styles/App.css";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleTheme = () => setDarkMode(prev => !prev);
-
   return (
-    <div className={darkMode ? 'app dark' : 'app light'}>
+    <div className="app">
       <Router>
-        <Navbar toggleTheme={toggleTheme} darkMode={darkMode} />
+        <Navbar />
         
         <main>
           <Routes>

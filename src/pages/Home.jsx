@@ -91,13 +91,6 @@ function Home() {
           <span className="stat-label">Projects Built</span>
         </div>
       </div>
-
-      <div className="scroll-indicator fade-in delay-7">
-        <span>Scroll to explore</span>
-        <div className="mouse">
-          <div className="wheel"></div>
-        </div>
-      </div>
     </div>
   );
 }
