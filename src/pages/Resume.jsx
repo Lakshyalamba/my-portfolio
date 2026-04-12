@@ -1,114 +1,140 @@
-import React from "react";
-import "../styles/Resume.css";
-import resumePdf from "../assets/resume.pdf";
+import React, { useEffect, useState } from 'react';
+import '../styles/Resume.css';
+import resumePdf from '../assets/resume.pdf';
 
 function Resume() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    setVisible(true);
+  }, []);
+
+  const skills = [
+    { name: 'Python' },
+    { name: 'JavaScript' },
+    { name: 'React' },
+    { name: 'LangChain' },
+    { name: 'LangGraph' },
+    { name: 'Node.js' },
+    { name: 'PostgreSQL' },
+    { name: 'Machine Learning' },
+  ];
+
+  const links = [
+    { name: 'GitHub', url: 'https://github.com/Lakshyalamba' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/lakshyachoudhary26/' },
+    { name: 'LeetCode', url: 'https://leetcode.com/u/lakshya_choudhary/' },
+  ];
+
   return (
     <div className="resume-container">
-      <h1 className="resume-title">MY RESUME</h1>
+      <div className="bg-effects">
+        <div className="gradient-orb orb-1"></div>
+        <div className="gradient-orb orb-2"></div>
+      </div>
 
-      {/* Professional Summary */}
-      <section className="resume-section">
-        <h2>Professional Summary</h2>
-        <p>
-          Collaborative software engineering intern with a strong learning mindset, building systems in fast-paced team environments. Proficient in Python and JavaScript, delivering features through deployment. Experienced in Agentic AI development using LangChain and LangGraph, including tool-calling and orchestration. Solid foundations in machine learning and data structures & algorithms, demonstrated through 425+ LeetCode problems. Engineer focused on debugging and scalable code.
-        </p>
-      </section>
+      <div className={`resume-content ${visible ? 'visible' : ''}`}>
+        <header className="resume-header">
+          <div className="header-badge">Resume</div>
+          <h1 className="resume-title">
+            <span className="title-gradient">Lakshya</span>
+          </h1>
+          <p className="resume-subtitle">Software Engineering Intern | Agentic AI Developer</p>
+        </header>
 
-      {/* Education */}
-      <section className="resume-section">
-        <h2>Education</h2>
-        <div className="resume-item">
-          <h3>Bachelor of Technology in Computer Science</h3>
-          <p>Newton School of Technology, Rishihood University, 2024 - 2028</p>
-          <p>CGPA: 7.935/10</p>
-        </div>
-        <div className="resume-item">
-          <h3>Intermediate (Class XII)</h3>
-          <p>NRJ Sr Sec School, 2022 - 2023</p>
-          <p>Grade: 80%</p>
-        </div>
-        <div className="resume-item">
-          <h3>Matriculation (Class X)</h3>
-          <p>NRJ Sr Sec School, 2020 - 2021</p>
-          <p>Grade: 100%</p>
-        </div>
-      </section>
-
-      {/* Projects */}
-      <section className="resume-section">
-        <h2>Projects</h2>
-        <div className="resume-item">
-          <h3>BingeQuiz</h3>
-          <p><strong>Tech Stack:</strong> React.js, JavaScript, CSS</p>
-          <ul>
-            <li>
-              Built using React.js, JavaScript, and CSS to create a modern and efficient web application.
-            </li>
-            <li>
-              Developed a dynamic movie quiz app where users can test their knowledge with interactive questions.
-            </li>
-            <li>
-              Integrated difficulty levels, responsive design, and GitHub version control to ensure scalability, maintainability, and seamless navigation.
-            </li>
-          </ul>
-          <p>
-            <a href="https://github.com/Lakshyalamba/bingequiznextjs" target="_blank" rel="noopener noreferrer">GitHub</a> |{" "}
-            <a href="https://bingequiz.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <section className="resume-section">
+          <h2 className="section-title">
+            <span className="section-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </span>
+            About
+          </h2>
+          <p className="about-text">
+            Building systems in fast-paced environments with proficiency in Python and JavaScript. 
+            Specializing in Agentic AI development using LangChain and LangGraph with 425+ LeetCode problems solved. 
+            Focused on writing debuggable, scalable code.
           </p>
-        </div>
-      </section>
+        </section>
 
-      {/* Skills */}
-      <section className="resume-section">
-        <h2>Skills</h2>
-        <div className="skills-list">
-          <span className="skill">Python</span>
-          <span className="skill">JavaScript</span>
-          <span className="skill">LangChain</span>
-          <span className="skill">LangGraph</span>
-          <span className="skill">React</span>
-          <span className="skill">Node.js</span>
-          <span className="skill">Express.js</span>
-          <span className="skill">MongoDB</span>
-          <span className="skill">MySQL</span>
-          <span className="skill">PostgreSQL</span>
-          <span className="skill">NumPy</span>
-          <span className="skill">Pandas</span>
-          <span className="skill">Machine Learning</span>
-          <span className="skill">Data Structures & Algorithms</span>
-          <span className="skill">HTML</span>
-          <span className="skill">CSS</span>
-        </div>
-      </section>
+        <section className="resume-section">
+          <h2 className="section-title">
+            <span className="section-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+            </span>
+            Education
+          </h2>
+          <div className="education-card">
+            <div className="edu-header">
+            <h3>B.Tech in Computer Science (2024-2028)</h3>
+            </div>
+            <p className="edu-institution">Newton School of Technology, Rishihood University</p>
+            <div className="edu-grades">
+              <span>CGPA: 7.935/10</span>
+            </div>
+          </div>
+        </section>
 
-      {/* Links */}
-      <section className="resume-section">
-        <h2>Links</h2>
-        <ul>
-          <li><a href="https://www.linkedin.com/in/lakshya-choudhary-881a4b31a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          <li><a href="https://github.com/Lakshyalamba" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-          <li><a href="https://www.codechef.com/users/lakshya_lamba9" target="_blank" rel="noopener noreferrer">CodeChef</a></li>
-          <li><a href="https://codeforces.com/profile/lakshyalamba" target="_blank" rel="noopener noreferrer">Codeforces</a></li>
-          <li><a href="https://leetcode.com/u/lakshya_choudhary/" target="_blank" rel="noopener noreferrer">LeetCode</a></li>
-          <li><a href="https://my-personal-portfol.netlify.app/" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
-        </ul>
-      </section>
+        <section className="resume-section">
+          <h2 className="section-title">
+            <span className="section-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </span>
+            Skills
+          </h2>
+          <div className="skills-grid">
+            {skills.map((skill, index) => (
+              <div key={skill.name} className="skill-item" style={{ animationDelay: `${index * 0.1}s` }}>
+                <span className="skill-name">{skill.name}</span>
+              </div>
+            ))}
+          </div>
+        </section>
 
-      {/* Download Resume */}
-      <section className="resume-section download-section">
-        <h2>Want a copy of my Resume?</h2>
-        <p>Click below to download a professionally formatted PDF version.</p>
-        <a
-          href={resumePdf}
-          download="resume.pdf"
-          className="btn btn-glow"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Download PDF
-        </a>
-      </section>
+        <section className="resume-section">
+          <h2 className="section-title">
+            <span className="section-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+              </svg>
+            </span>
+            Connect
+          </h2>
+          <div className="links-row">
+            {links.map((link) => (
+              <a 
+                key={link.name}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-button"
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
+        </section>
+
+        <section className="resume-section download-section">
+          <a href={resumePdf} download className="download-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            <span>Download Resume</span>
+          </a>
+        </section>
+      </div>
     </div>
   );
 }
