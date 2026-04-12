@@ -49,18 +49,6 @@ const projects = [
     github: "https://github.com/Lakshyalamba/Mini-Calender",
     demo: "https://mini-calender-mu.vercel.app/",
     gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"
-  },
-  {
-    id: 5,
-    title: "AI Agent System",
-    category: "AI/ML",
-    description:
-      "Autonomous AI agent system built with LangChain and LangGraph, capable of multi-step reasoning, tool calling, and complex task automation with memory and context awareness.",
-    techStack: ["Python", "LangChain", "LangGraph", "OpenAI API", "Vector DB"],
-    features: ["Multi-Agent Orchestration", "Tool Calling", "RAG Systems", "Memory Management"],
-    github: "https://github.com/Lakshyalamba",
-    demo: "#",
-    gradient: "linear-gradient(135deg, #a855f7 0%, #ec4899 100%)"
   }
 ];
 
@@ -70,7 +58,7 @@ function Projects() {
   const [activeFilter, setActiveFilter] = useState('All');
   const projectRefs = useRef({});
 
-  const categories = ['All', 'Full Stack', 'Web App', 'AI/ML', 'Utility'];
+  const categories = ['All', 'Full Stack', 'Web App', 'Utility'];
 
   const filteredProjects = activeFilter === 'All' 
     ? projects 
