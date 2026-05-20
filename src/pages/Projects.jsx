@@ -4,15 +4,15 @@ import '../styles/Projects.css';
 const projects = [
   {
     id: 1,
-    title: "MoneyMind",
+    title: "NextFlow",
     category: "Full Stack",
     description:
-      "A comprehensive personal finance management platform with income/expense tracking, budget management, and financial goal setting. Features interactive dashboards with category-wise analytics and secure authentication.",
-    techStack: ["React.js", "Node.js", "Express.js", "Prisma", "PostgreSQL", "JWT"],
-    features: ["Dashboard Analytics", "Budget Tracking", "SIP Calculator", "Currency Converter", "Export Reports"],
-    github: "https://github.com/Lakshyalamba/moneymind",
-    demo: "https://moneymind-personalfinance.netlify.app/",
-    gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+      "A production-ready scaffold for a full-stack visual workflow builder focused on media and AI processing. It integrates Next.js, Prisma, React Flow, and Gemini API with modular folders, API/server utilities, dashboard previews, and support for future workflow execution, asset management, and Trigger.dev job orchestration.",
+    techStack: ["Next.js", "Prisma", "React Flow", "Gemini API", "Trigger.dev"],
+    features: ["Visual Workflow Builder", "Dashboard Previews", "API/Server Utilities", "Asset Management", "Job Orchestration"],
+    github: "https://github.com/Lakshyalamba/NextFlow",
+    demo: "https://next-flow-pi-puce.vercel.app/",
+    gradient: "linear-gradient(135deg, #22c55e 0%, #0ea5e9 100%)"
   },
   {
     id: 2,
@@ -28,27 +28,15 @@ const projects = [
   },
   {
     id: 3,
-    title: "Bingequiz",
-    category: "Web App",
+    title: "MoneyMind",
+    category: "Full Stack",
     description:
-      "An engaging movie quiz application featuring interactive questions, multiple difficulty levels, and a responsive design. Test your film knowledge with dynamic question sets.",
-    techStack: ["React", "HTML", "CSS", "JavaScript"],
-    features: ["Multiple Difficulty Levels", "Responsive Design", "Score Tracking", "Question Bank"],
-    github: "https://github.com/Lakshyalamba/bingequiznextjs",
-    demo: "https://bingequiz.netlify.app/",
-    gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
-  },
-  {
-    id: 4,
-    title: "Mini Calendar",
-    category: "Utility",
-    description:
-      "A lightweight calendar application displaying the current month in an elegant grid format. Highlights today and adapts seamlessly to different screen sizes.",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    features: ["Current Day Highlight", "Grid Layout", "Lightweight", "Responsive"],
-    github: "https://github.com/Lakshyalamba/Mini-Calender",
-    demo: "https://mini-calender-mu.vercel.app/",
-    gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"
+      "A comprehensive personal finance management platform with income/expense tracking, budget management, and financial goal setting. Features interactive dashboards with category-wise analytics and secure authentication.",
+    techStack: ["React.js", "Node.js", "Express.js", "Prisma", "PostgreSQL", "JWT"],
+    features: ["Dashboard Analytics", "Budget Tracking", "SIP Calculator", "Currency Converter", "Export Reports"],
+    github: "https://github.com/Lakshyalamba/moneymind",
+    demo: "https://moneymind-personalfinance.netlify.app/",
+    gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
   }
 ];
 
@@ -58,7 +46,7 @@ function Projects() {
   const [activeFilter, setActiveFilter] = useState('All');
   const projectRefs = useRef({});
 
-  const categories = ['All', 'Full Stack', 'Web App', 'Utility'];
+  const categories = ['All', 'Full Stack'];
 
   const filteredProjects = activeFilter === 'All' 
     ? projects 
