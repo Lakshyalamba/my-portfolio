@@ -37,6 +37,18 @@ const projects = [
     github: "https://github.com/Lakshyalamba/moneymind",
     demo: "https://moneymind-personalfinance.netlify.app/",
     gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+  },
+  {
+    id: 4,
+    title: "Peblo AI Notes",
+    category: "Full Stack",
+    description:
+      "A full-stack AI-powered notes workspace built for the Peblo Full Stack Developer Challenge, featuring secure authentication, a polished notes editor, AI-assisted summaries and action items, public sharing, and a productivity dashboard.",
+    techStack: ["Next.js", "Express", "PostgreSQL", "Prisma", "AI Summaries"],
+    features: ["Secure Authentication", "Notes Editor", "AI Action Items", "Public Sharing", "Productivity Dashboard"],
+    github: "https://github.com/Lakshyalamba/PEBLO_Assignment",
+    demo: "https://peblo-assignment-client.vercel.app/",
+    gradient: "linear-gradient(135deg, #f97316 0%, #14b8a6 100%)"
   }
 ];
 
