@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/Resume.css';
-import resumePdf from '../assets/resume.pdf';
+import resumePdf from '../assets/Full Stack Resume.pdf';
 
 function Resume() {
   const [visible, setVisible] = useState(false);
@@ -75,7 +75,7 @@ function Resume() {
             </div>
             <p className="edu-institution">Newton School of Technology, Rishihood University</p>
             <div className="edu-grades">
-              <span>CGPA: 7.935/10</span>
+              <span>CGPA: 8.0/10</span>
             </div>
           </div>
         </section>
@@ -125,7 +125,7 @@ function Resume() {
         </section>
 
         <section className="resume-section download-section">
-          <a href={resumePdf} download className="download-btn">
+          <a href={resumePdf} download="Lakshya-Full-Stack-Resume.pdf" className="download-btn">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
               <polyline points="7 10 12 15 17 10"/>
