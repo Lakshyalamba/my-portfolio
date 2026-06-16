@@ -49,6 +49,18 @@ const projects = [
     github: "https://github.com/Lakshyalamba/PEBLO_Assignment",
     demo: "https://peblo-assignment-client.vercel.app/",
     gradient: "linear-gradient(135deg, #f97316 0%, #14b8a6 100%)"
+  },
+  {
+    id: 5,
+    title: "Trading Risk-Reward Calculator",
+    category: "Frontend",
+    description:
+      "A production-ready trading utility providing real-time risk-reward analysis and position sizing. Features include intelligent trade interpretation panels, color-coded success metrics, and professional PDF exports using jsPDF, all styled with a custom brand theme.",
+    techStack: ["Next.js", "Tailwind CSS", "TypeScript", "jsPDF"],
+    features: ["Real-time Calculations", "Position Sizing", "Risk-Reward Analysis", "PDF Export", "Input Validation"],
+    github: "https://github.com/Lakshyalamba/risk-reward-calculator",
+    demo: "https://risk-reward-calculator-beta.vercel.app/",
+    gradient: "linear-gradient(135deg, #2a5c3f 0%, #b87333 100%)"
   }
 ];
 
@@ -58,7 +70,7 @@ function Projects() {
   const [activeFilter, setActiveFilter] = useState('All');
   const projectRefs = useRef({});
 
-  const categories = ['All', 'Full Stack'];
+  const categories = ['All', 'Full Stack', 'Frontend'];
 
   const filteredProjects = activeFilter === 'All' 
     ? projects 
