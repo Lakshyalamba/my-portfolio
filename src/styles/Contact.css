@@ -1,13 +1,13 @@
 :root {
-  --accent-color: #6366f1;
-  --accent-secondary: #8b5cf6;
-  --accent-tertiary: #ec4899;
+  --accent-color: #ffffff;
+  --accent-secondary: #a0a0a0;
+  --accent-tertiary: #666666;
   --text-color: #fff;
-  --text-muted: #a1a1aa;
-  --bg-primary: #030014;
+  --text-muted: #9ca3af;
+  --bg-primary: #000000;
   --glass-bg: rgba(255, 255, 255, 0.05);
   --glass-border: rgba(255, 255, 255, 0.1);
-  --success-color: #10b981;
+  --success-color: #34d399;
 }
 
 .contact-container {
@@ -62,8 +62,8 @@
   position: absolute;
   inset: 0;
   background-image: 
-    linear-gradient(rgba(99, 102, 241, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
   background-size: 50px 50px;
   animation: grid-move 20s linear infinite;
 }
@@ -161,8 +161,8 @@
 }
 
 .contact-form-wrapper:hover {
-  border-color: rgba(99, 102, 241, 0.4);
-  box-shadow: 0 20px 50px rgba(99, 102, 241, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 20px 50px rgba(255, 255, 255, 0.15);
 }
 
 .success-message {
@@ -245,7 +245,6 @@
 .input-wrapper textarea:focus {
   outline: none;
   border-color: var(--accent-color);
-  background: rgba(99, 102, 241, 0.05);
 }
 
 .input-wrapper.focused .input-glow {
@@ -288,7 +287,7 @@
   cursor: pointer;
   overflow: hidden;
   transition: all 0.3s ease;
-  box-shadow: 0 10px 40px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 10px 40px rgba(255, 255, 255, 0.3);
 }
 
 .submit-btn svg {
@@ -298,7 +297,7 @@
 
 .submit-btn:hover:not(:disabled) {
   transform: translateY(-3px);
-  box-shadow: 0 15px 50px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 15px 50px rgba(255, 255, 255, 0.4);
 }
 
 .submit-btn:hover:not(:disabled) .btn-glow-effect {
