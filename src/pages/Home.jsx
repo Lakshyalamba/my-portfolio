@@ -223,6 +223,7 @@ function Home() {
           </div>
         </div>
       </div>
+      </div>
       
       <div className="stats-section fade-in delay-6" ref={statsRef}>
         <div className="stat-item pulse-hover">
