@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useCallback } from 'react';
 import '../styles/Home.css';
-import profilePic from '../assets/images/profile.jpg';
+import profilePic from '../assets/images/profile1.png';
 import { Link } from 'react-router-dom';
 
 const typewriterTexts = [
@@ -10,11 +10,41 @@ const typewriterTexts = [
   'Building Autonomous AI Agents'
 ];
 
+const codeRainChars = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン01';
+
+function CodeRain({ count = 40 }) {
+  return (
+    <div className="code-rain">
+      {Array.from({ length: count }, (_, i) => {
+        const len = 5 + Math.floor(Math.random() * 15);
+        const chars = Array.from({ length: len }, () => codeRainChars[Math.floor(Math.random() * codeRainChars.length)]).join('');
+        return (
+          <div
+            key={i}
+            className="rain-column"
+            style={{
+              left: `${(i / count) * 100}%`,
+              animationDelay: `${Math.random() * 8}s`,
+              animationDuration: `${4 + Math.random() * 6}s`,
+            }}
+          >
+            <span className="rain-char">{chars[0]}</span>
+            {chars.slice(1).split('').map((c, j) => (
+              <span key={j} className="rain-char dim">{c}</span>
+            ))}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 function Home() {
   const [textIndex, setTextIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [spotlightPos, setSpotlightPos] = useState({ x: 50, y: 50 });
   const [countersStarted, setCountersStarted] = useState(false);
   const [counters, setCounters] = useState({ leetcode: 0, projects: 0 });
   const statsRef = useRef(null);
@@ -41,16 +71,21 @@ function Home() {
     return () => clearTimeout(timeout);
   }, [displayText, isDeleting, textIndex]);
 
+  const handleMouseMove = useCallback((e) => {
+    setMousePos({
+      x: (e.clientX / window.innerWidth - 0.5) * 20,
+      y: (e.clientY / window.innerHeight - 0.5) * 20
+    });
+    setSpotlightPos({
+      x: (e.clientX / window.innerWidth) * 100,
+      y: (e.clientY / window.innerHeight) * 100
+    });
+  }, []);
+
   useEffect(() => {
-    const handleMouseMove = (e) => {
-      setMousePos({
-        x: (e.clientX / window.innerWidth - 0.5) * 20,
-        y: (e.clientY / window.innerHeight - 0.5) * 20
-      });
-    };
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
+  }, [handleMouseMove]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -68,7 +103,7 @@ function Home() {
   useEffect(() => {
     if (!countersStarted) return;
     
-    const targets = { leetcode: 425, projects: 10 };
+    const targets = { leetcode: 500, projects: 12 };
     const duration = 2000;
     const steps = 60;
     const increment = {
@@ -105,7 +140,13 @@ function Home() {
   };
 
   return (
-    <div className="home-container">
+    <div className="home-container background-grid">
+      <div 
+        className="spotlight" 
+        style={{ 
+          background: `radial-gradient(circle 300px at ${spotlightPos.x}% ${spotlightPos.y}%, rgba(255,255,255,0.12) 0%, transparent 100%)` 
+        }}
+      />
       <div className="bg-gradient"></div>
       <div className="floating-shapes">
         <div className="shape shape-1"></div>
@@ -116,20 +157,40 @@ function Home() {
       <div className="particles">
         {generateParticles()}
       </div>
+      <CodeRain />
       
-      <div 
-        className="hero-section"
-        style={{ transform: `translate(${mousePos.x * 0.3}px, ${mousePos.y * 0.3}px)` }}
-      >
-        <div className="home-photo fade-in">
-          <div className="photo-ring ring-1"></div>
-          <div className="photo-ring ring-2"></div>
-          <div className="photo-glow"></div>
-          <img src={profilePic} alt="Lakshya Profile" />
-          <div className="orbit">
-            <div className="orbit-dot"></div>
+      <div className="hero-3d-wrapper">
+        <div 
+          className="hero-section"
+          style={{ 
+            perspective: '1000px',
+            transform: `translate(${mousePos.x * 0.3}px, ${mousePos.y * 0.3}px)` 
+          }}
+        >
+          <div 
+            className="home-photo fade-in"
+            style={{
+              transform: `perspective(800px) rotateY(${mousePos.x * 0.5}deg) rotateX(${-mousePos.y * 0.5}deg)`,
+              transition: 'transform 0.15s ease-out'
+            }}
+          >
+            <div className="photo-ring ring-1"></div>
+            <div className="photo-ring ring-2"></div>
+            <div className="photo-ring ring-3"></div>
+            <div className="photo-glow"></div>
+            <img src={profilePic} alt="Lakshya Profile" />
+            <div className="orbit">
+              <div className="orbit-dot"></div>
+            </div>
+            <div className="cube-3d">
+              <div className="cube-face front"></div>
+              <div className="cube-face back"></div>
+              <div className="cube-face right"></div>
+              <div className="cube-face left"></div>
+              <div className="cube-face top"></div>
+              <div className="cube-face bottom"></div>
+            </div>
           </div>
-        </div>
         
         <div className="intro-text">
           <div className="greeting slide-up delay-1">
@@ -170,7 +231,7 @@ function Home() {
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
             </svg>
           </div>
-          <span className="stat-number" data-value="425">+{counters.leetcode}</span>
+          <span className="stat-number" data-value="500">+{counters.leetcode}</span>
           <span className="stat-label">LeetCode Problems</span>
           <div className="stat-glow"></div>
         </div>
