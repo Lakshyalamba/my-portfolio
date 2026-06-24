@@ -73,7 +73,7 @@ function About() {
             </p>
             <p className="description">
               My journey in tech is driven by curiosity and a relentless desire to learn. I've solved 
-              425+ LeetCode problems, built multiple production-ready projects, and continue to explore 
+              500+ LeetCode problems, built multiple production-ready projects, and continue to explore 
               the cutting edge of AI technology.
             </p>
           </div>
@@ -86,7 +86,7 @@ function About() {
                 </svg>
               </div>
               <div className="fact-content">
-                <span className="fact-number">425+</span>
+                <span className="fact-number">500+</span>
                 <span className="fact-label">LeetCode Problems</span>
               </div>
             </div>
@@ -98,7 +98,7 @@ function About() {
                 </svg>
               </div>
               <div className="fact-content">
-                <span className="fact-number">10+</span>
+                <span className="fact-number">12+</span>
                 <span className="fact-label">Projects Built</span>
               </div>
             </div>
@@ -177,7 +177,7 @@ function About() {
                 </svg>
               </div>
               <h4>Problem Solving</h4>
-              <p>Strong fundamentals in algorithms and data structures with 425+ LeetCode problems solved.</p>
+              <p>Strong fundamentals in algorithms and data structures with 500+ LeetCode problems solved.</p>
             </div>
           </div>
         </div>
