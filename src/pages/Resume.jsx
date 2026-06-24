@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/Resume.css';
-import resumePdf from '../assets/Full Stack Resume.pdf';
+import resumePdf from '../assets/Resume.pdf';
 
 function Resume() {
   const [visible, setVisible] = useState(false);
@@ -54,7 +54,7 @@ function Resume() {
           </h2>
           <p className="about-text">
             Building systems in fast-paced environments with proficiency in Python and JavaScript. 
-            Specializing in Agentic AI development using LangChain and LangGraph with 425+ LeetCode problems solved. 
+            Specializing in Agentic AI development using LangChain and LangGraph with 500+ LeetCode problems solved. 
             Focused on writing debuggable, scalable code.
           </p>
         </section>
@@ -125,7 +125,7 @@ function Resume() {
         </section>
 
         <section className="resume-section download-section">
-          <a href={resumePdf} download="Lakshya-Full-Stack-Resume.pdf" className="download-btn">
+          <a href={resumePdf} download="Lakshya-Resume.pdf" className="download-btn">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
               <polyline points="7 10 12 15 17 10"/>
