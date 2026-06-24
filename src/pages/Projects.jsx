@@ -4,15 +4,15 @@ import '../styles/Projects.css';
 const projects = [
   {
     id: 1,
-    title: "NextFlow",
+    title: "MoneyMind",
     category: "Full Stack",
     description:
-      "A production-ready scaffold for a full-stack visual workflow builder focused on media and AI processing. It integrates Next.js, Prisma, React Flow, and Gemini API with modular folders, API/server utilities, dashboard previews, and support for future workflow execution, asset management, and Trigger.dev job orchestration.",
-    techStack: ["Next.js", "Prisma", "React Flow", "Gemini API", "Trigger.dev"],
-    features: ["Visual Workflow Builder", "Dashboard Previews", "API/Server Utilities", "Asset Management", "Job Orchestration"],
-    github: "https://github.com/Lakshyalamba/NextFlow",
-    demo: "https://next-flow-pi-puce.vercel.app/",
-    gradient: "linear-gradient(135deg, #22c55e 0%, #0ea5e9 100%)"
+      "A comprehensive personal finance management platform with income/expense tracking, budget management, and financial goal setting. Features interactive dashboards with category-wise analytics and secure authentication.",
+    techStack: ["React.js", "Node.js", "Express.js", "Prisma", "PostgreSQL", "JWT"],
+    features: ["Dashboard Analytics", "Budget Tracking", "SIP Calculator", "Currency Converter", "Export Reports"],
+    github: "https://github.com/Lakshyalamba/moneymind",
+    demo: "https://moneymind-personalfinance.netlify.app/",
+    gradient: "linear-gradient(135deg, #ffffff 0%, #a0a0a0 100%)"
   },
   {
     id: 2,
@@ -24,23 +24,35 @@ const projects = [
     features: ["Streak Tracking", "Course Enrollment", "Goal Management", "Community Posts", "Analytics Export"],
     github: "https://github.com/Lakshyalamba/dailydrive",
     demo: "https://dailydrive-anfy.vercel.app/",
-    gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
+    gradient: "linear-gradient(135deg, #e0e0e0 0%, #888888 100%)"
   },
   {
     id: 3,
-    title: "MoneyMind",
+    title: "AlgoAnalyze AI",
     category: "Full Stack",
     description:
-      "A comprehensive personal finance management platform with income/expense tracking, budget management, and financial goal setting. Features interactive dashboards with category-wise analytics and secure authentication.",
-    techStack: ["React.js", "Node.js", "Express.js", "Prisma", "PostgreSQL", "JWT"],
-    features: ["Dashboard Analytics", "Budget Tracking", "SIP Calculator", "Currency Converter", "Export Reports"],
-    github: "https://github.com/Lakshyalamba/moneymind",
-    demo: "https://moneymind-personalfinance.netlify.app/",
-    gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+      "AI-powered DSA visualizer and tutor that turns Python DSA code into step-by-step visualizations, dry runs, short annotations, and Gemini-powered English/Hinglish explanations.",
+    techStack: ["Python", "Gemini API", "React", "DSA", "AI"],
+    features: ["Step-by-Step Visualization", "Dry Runs", "Code Annotations", "Gemini AI Explanations", "English/Hinglish Support"],
+    github: "https://github.com/Lakshyalamba/algoanalyze-ai",
+    demo: "https://algoanalyze-ai.vercel.app/",
+    gradient: "linear-gradient(135deg, #cccccc 0%, #777777 100%)"
   },
   {
     id: 4,
-    title: "Peblo AI Notes",
+    title: "NextFlow",
+    category: "Full Stack",
+    description:
+      "A production-ready scaffold for a full-stack visual workflow builder focused on media and AI processing. It integrates Next.js, Prisma, React Flow, and Gemini API with modular folders, API/server utilities, dashboard previews, and support for future workflow execution, asset management, and Trigger.dev job orchestration.",
+    techStack: ["Next.js", "Prisma", "React Flow", "Gemini API", "Trigger.dev"],
+    features: ["Visual Workflow Builder", "Dashboard Previews", "API/Server Utilities", "Asset Management", "Job Orchestration"],
+    github: "https://github.com/Lakshyalamba/NextFlow",
+    demo: "https://next-flow-pi-puce.vercel.app/",
+    gradient: "linear-gradient(135deg, #bbbbbb 0%, #666666 100%)"
+  },
+  {
+    id: 5,
+    title: "Likho",
     category: "Full Stack",
     description:
       "A full-stack AI-powered notes workspace built for the Peblo Full Stack Developer Challenge, featuring secure authentication, a polished notes editor, AI-assisted summaries and action items, public sharing, and a productivity dashboard.",
@@ -48,10 +60,34 @@ const projects = [
     features: ["Secure Authentication", "Notes Editor", "AI Action Items", "Public Sharing", "Productivity Dashboard"],
     github: "https://github.com/Lakshyalamba/PEBLO_Assignment",
     demo: "https://peblo-assignment-client.vercel.app/",
-    gradient: "linear-gradient(135deg, #f97316 0%, #14b8a6 100%)"
+    gradient: "linear-gradient(135deg, #999999 0%, #555555 100%)"
   },
   {
-    id: 5,
+    id: 6,
+    title: "Academos",
+    category: "Full Stack",
+    description:
+      "An AI-powered student assistant built with Next.js that turns academic records into clear, structured guidance. It fetches verified student data through Newton MCP, stores a snapshot in Supabase, and uses Gemini to generate readable responses such as summaries, recommended tasks, and useful academic insights. Features a public landing page with dashboard, chat, and contest workspace behind Supabase Auth.",
+    techStack: ["Next.js", "Supabase", "Gemini", "Newton MCP", "CSS Modules"],
+    features: ["Public Landing Page", "Dashboard & Chat", "Supabase Auth", "AI Summaries", "Academic Insights"],
+    github: "https://github.com/Lakshyalamba/academos-ai",
+    demo: "https://academos-ai.onrender.com/",
+    gradient: "linear-gradient(135deg, #aaaaaa 0%, #555555 100%)"
+  },
+  {
+    id: 7,
+    title: "Rishihood University Landing Page",
+    category: "Frontend",
+    description:
+      "A polished, responsive landing page for Rishihood University built with Next.js, Tailwind CSS, Framer Motion, and Lucide icons. Features a strong hero section, program highlights, campus features, student testimonials, and a focused application call to action.",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Lucide React"],
+    features: ["Responsive Layout", "Animated Hero Dashboard", "Mobile Nav Menu", "Program Cards", "Testimonial Carousel"],
+    github: "https://github.com/Lakshyalamba/Reducate_Assignment",
+    demo: "https://rishihoodlanding.vercel.app/",
+    gradient: "linear-gradient(135deg, #888888 0%, #444444 100%)"
+  },
+  {
+    id: 8,
     title: "Trading Risk-Reward Calculator",
     category: "Frontend",
     description:
@@ -60,7 +96,19 @@ const projects = [
     features: ["Real-time Calculations", "Position Sizing", "Risk-Reward Analysis", "PDF Export", "Input Validation"],
     github: "https://github.com/Lakshyalamba/risk-reward-calculator",
     demo: "https://risk-reward-calculator-beta.vercel.app/",
-    gradient: "linear-gradient(135deg, #2a5c3f 0%, #b87333 100%)"
+    gradient: "linear-gradient(135deg, #777777 0%, #444444 100%)"
+  },
+  {
+    id: 9,
+    title: "CardioRisk AI",
+    category: "Full Stack",
+    description:
+      "An Agentic AI Health Support Assistant for cardiovascular-risk support. Preserves the existing logistic-regression risk prediction pipeline and Streamlit user flow, featuring a compiled LangGraph StateGraph, explicit typed shared state, persisted vector-DB RAG with Chroma, structured source-attributed health reports, and graceful fallback behavior for missing data, retrieval gaps, and LLM failures.",
+    techStack: ["LangGraph", "Chroma", "Streamlit", "Logistic Regression", "Hugging Face"],
+    features: ["Agentic AI Assistant", "RAG with Chroma DB", "Health Reports", "Risk Prediction Pipeline", "Fallback Handling"],
+    github: "https://github.com/Lakshyalamba/GenAI-capstone",
+    demo: "https://huggingface.co/spaces/lakshyalamba/cardiorisk-ai",
+    gradient: "linear-gradient(135deg, #666666 0%, #333333 100%)"
   }
 ];
 
@@ -70,7 +118,7 @@ function Projects() {
   const [activeFilter, setActiveFilter] = useState('All');
   const projectRefs = useRef({});
 
-  const categories = ['All', 'Full Stack', 'Frontend'];
+  const categories = ['All', 'Full Stack', 'Frontend', 'Utility'];
 
   const filteredProjects = activeFilter === 'All' 
     ? projects 
